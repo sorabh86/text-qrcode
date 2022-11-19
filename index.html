@@ -1,0 +1,31 @@
+<!-- index.html -->
+<html>
+<head>
+<title>Demo Generate QR</title>
+<style>
+*{padding: 0;margin: 0;}
+h1{text-align: center; padding: 30px;}
+.sos-qr{margin: 0 auto;text-align: center;}
+.form {margin:0 auto; width:500px; padding: 30px; border:1px solid #ccc;}
+input{width:100%;padding: 10px 20px;border:1px solid #ccc;}
+.form-group {margin-bottom: 16px;}
+button{cursor: pointer;padding: 10px 30px;background:#f60; border:1px solid #f50;border-radius: 8px;font-weight:bold;color:#eee;transition: 500ms all;}
+button:hover{background:#f33}
+button:active{background:#813}
+</style>
+</head>
+<body>
+    <h1>Generate <small>Text to QR Code</small></h1>
+    <div class="form">
+        <div class="form-group">
+            <label for="text">Enter Your Text</label>
+            <input id="sos-text" type="text" name="text" value="Some Text">
+        </div>
+        <button id="btn-generate">Generate</button>
+    </div>
+    <div class="sos-qr">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="dist/main.js"></script>
+</body>
+</html>
