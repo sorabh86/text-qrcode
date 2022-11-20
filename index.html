@@ -1,12 +1,12 @@
 <!-- index.html -->
 <html>
 <head>
-    <link rel="icon" href="/favicon.ico" />
-<title>Demo QRcode</title>
+<title>Demo Generate QR</title>
 <style>
 *{padding: 0;margin: 0;}
 h1{text-align: center; padding: 30px;}
-.sos-qr{margin: 0 auto;text-align: center;}
+.sos-qr{margin: 0 auto;text-align: center;transition: 500ms all ease-in-out;}
+.sos-qr.active{zoom: 2;}
 .form {margin:0 auto; width:500px; padding: 30px; border:1px solid #ccc;}
 input{width:100%;padding: 10px 20px;border:1px solid #ccc;}
 .form-group {margin-bottom: 16px;}
@@ -27,6 +27,6 @@ button:active{background:#813}
     <div class="sos-qr">
         <canvas id="canvas"></canvas>
     </div>
-    <script src="main.js"></script>
+    <script src="dist/main.js"></script>
 </body>
 </html>
